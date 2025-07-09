@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF=8">
+   <title>Vision By Joy</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- 🌸 Navigation Bar -->
+<nav class="navbar">
+  <a href="#hero">Home</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#before-after">Before & After</a>
+  <a href="#about">What I Do</a>
+  <a href="#services">My Packages</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+    <!--HERO SECTION-->
+    <section class="hero">
+        <section id="hero" class="hero fade-in">
+        <h1><span id="typedText"></span><span class="cursor">|</span></h1>
+        <p>Capturing beauty, one edit at a time 💖</p>
+        <img src="images/vsj.8.jpg" alt="Joy editing">
+    </section>
+
+    <!--GALLERY SECTION-->
+    <section id="gallery" class="gallery fade-in">
+        <h2>My Work</h2>
+        <div class="gallery-grid">
+            <img src="images/vsj.7.jpg" alt="giraffe">
+        </div>
+    </section>
+
+    <!--BEFORE & AFTER SECTION-->
+    <section id="before-after" class="before-after fade-in">
+    <h2>Before & After</h2>
+    <div class="compare-grid">
+      <div>
+        <h3>Before</h3>
+        <div class="image-column">
+          <img src="images/vsj.1.jpg" alt="Before 1">
+          <img src="images/vsj.2.jpg" alt="Before 2">
+          <img src="images/vsj.3.jpg" alt="Before 3">
+          <img src="images/vsj.4.jpg" alt="Before 4">
+          <img src="images/vsj.5.jpg" alt="Before 5">
+          <img src="images/vsj.6.jpg" alt="Before 6">
+        </div>
+      </div>
+      <div>
+        <h3>After</h3>
+        <div class="image-column">
+          <img src="images/vsj.1.1.jpg" alt="After 1">
+          <img src="images/vsj.2.2.jpg" alt="After 2">
+          <img src="images/vsj.3.3.jpg" alt="After 3">
+          <img src="images/vsj.4.4.jpg" alt="After 4">
+          <img src="images/vsj.5.5.jpg" alt="After 5">
+          <img src="images/vsj.6.6.jpg" alt="After 6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💬 WHAT I DO -->
+  <section id="about" class="about fade-in">
+    <h2>What I Do</h2>
+    <p>I specialize in creative photo and video editing — enhancing visuals, telling stories, and making your memories magical. ✨</p>
+  </section>
+
+  <section id="services" class="services fade-in">
+  <h2>My Packages</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3> Basic</h3>
+      <p>1 photo edit<br>Color balance<br>Quick turnaround</p>
+    </div>
+    <div class="card">
+      <h3>Premium</h3>
+      <p>5 photo edits<br>Beauty retouch<br>Custom style</p>
+    </div>
+    <div class="card">
+      <h3>Deluxe</h3>
+      <p>Full gallery<br>Photo + video<br>Creative effects</p>
+    </div>
+  </div>
+</section>
+
+  <!-- 💌 CONTACT / BOOKING -->
+  <section id="contact" class="contact fade-in">
+    <h2>Contact / Booking</h2>
+    <form id="contactForm" onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Your name" required><br>
+      <input type="email" placeholder="Your email" required><br>
+      <textarea placeholder="Your message" required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+    <p id="confirmation">Thank you! Your message was sent. 💌</p>
+  </section>
+
+  <script src="script.js"></script>
+
+  <!--  Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+<!--  Loader -->
+<div id="loader">
+  <p>Loading Vision by Joy...</p>
+</div>
+
+<script src="script.js"></script>
+
+<!--floating sparkles-->
+<div class="sparkles-cotainer"></div>
+
+<a href="#contact" class="floating-book">Book Now</a>
+
+<!-- 💬 Live Chat Button -->
+<a href="https://www.instagram.com/crum.joyy?igsh=MTd6MmN2Z290MGRvbA%3D%3D&utm_source=qr”target="_blank class="live-chat">💬 Chat on Insta</a>
+
+<!-- 🎨 Edit Suggestion Box -->
+<div class="edit-suggestion">
+  <button onclick="suggestEdit()">Need an edit idea?</button>
+  <p id="suggestionText">Click the button for some ✨ Joy-spiration!</p>
+</div>
+
+<!-- 🌈 Mini Personality Quiz -->
+<section id="quiz" class="quiz fade-in">
+  <h2>What’s Your Photo Edit Vibe?</h2>
+  <p>Choose a style below to discover your aesthetic ✨</p>
+  <div class="quiz-options">
+    <button onclick="showResult('dreamy')">💖 Soft & Dreamy</button>
+    <button onclick="showResult('bold')">🔥 Bold & Moody</button>
+    <button onclick="showResult('vintage')">🎞 Vintage & Cool</button>
+  </div>
+  <p id="quizResult" class="quiz-result"></p>
+</section>
+
+<!-- 🎁 Joy Jar -->
+<section class="joy-jar fade-in">
+  <h2>✨ Crack Open Joy’s Jar</h2>
+  <button onclick="openJoyJar()">Open the Jar 💝</button>
+  <p id="jarQuote">Need some Joy? Tap above for magic 💫</p>
+</section>
+
+
+</body>
+</html>
